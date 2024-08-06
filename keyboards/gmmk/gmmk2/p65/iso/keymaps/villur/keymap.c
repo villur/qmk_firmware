@@ -72,6 +72,7 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
 return false;
 }
 
+// https://www.camerondugan.com/blog/my-old-keyboard-is-basically-cheating
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (get_highest_layer(layer_state) == 1) {
         static bool aHeld = false;
